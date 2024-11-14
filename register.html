@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us.</title>
-    <link rel="stylesheet" href="STK1.css">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
     <header>
@@ -23,17 +23,26 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>About Simbank</h2>
-            <p>At Simbank, we're here to make banking simple, secure and convenient.<p>
-                </p> Whether you're saving for the future, planning investments, or managing daily finances, we're here to empower every step of your journey.</p>
-        </section>
-        
-    </main>
+    <h1>Register</h1>
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
 
+        <label for="idNumber">ID Number:</label>
+        <input type="text" id="idNumber" name="idNumber" placeholder="Enter your ID number" required>
+
+        <label for="pin">4-Digit PIN:</label>
+        <input type="password" id="pin" name="pin" placeholder="Enter 4-digit PIN" maxlength="4" required>
+
+        <input type="submit" value="Register">
+    </form>
+    <div id="message"></div>
+
+    
     <footer>
         <p>&copy; 2024 Simbank STK Inclusion System. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -4,37 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
-    <link rel="stylesheet" href="STK1.css">
+    <link rel="stylesheet" href="services.css">
 </head>
 <body>
     <header>
         <h1>Our Services</h1>
         <nav>
             <ul>
-                <li><a href="STK1.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <nav>
+                    <ul>
+                        <li><a href="STK1.html" target="_self">Main Page</a></li>
+                        <li><a href="Home.html" target="_self">Home</a></li>
+                        <li><a href="services.html" target="_self">Services</a></li>
+                        <li><a href="about.html" target="_self">About Us</a></li>
+                        <li><a href="contact.html" target="_self">Contact</a></li>
+                    </ul>
+                </nav>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section>
-            <h2>Web Development</h2>
-            <p>Details about web development services.</p>
+        <section onclick="window.location.href='send.html'">
+            <h2>Send</h2>
+            <p>Enter Amount</p>
+            <p>Enter Authorization code.</p>
+            <p>4 Digit Pin.</p>
         </section>
-        <section>
-            <h2>Mobile App Development</h2>
-            <p>Details about mobile app development services.</p>
+    
+        <section onclick="window.location.href='request.html'">
+            <h2>Request</h2>
+            <p>Enter peer's phone number.</p>
+            <p>Enter Amount</p>
+            <p>Enter Reason (Optional)</p>
+            <button onclick="window.location.href='send.html'; event.stopPropagation();">Send</button>
         </section>
-        <section>
-            <h2>Cloud Solutions</h2>
-            <p>Details about cloud solutions.</p>
+    
+        <section onclick="window.location.href='withdraw.html'">
+            <h2>Withdraw</h2>
+            <p>Enter agent number.</p>
+            <p>Enter Amount</p>
+            <p>Enter 4 digit pin</p>
+        </section>
+    
+        <section onclick="window.location.href='buy_airtime.html'">
+            <h2>Buy Airtime</h2>
+            <p>My Phone</p>
+            <p>Other Phone</p>
+            <p>Enter 4 Digit Pin</p>
+        </section>
+    
+        <section onclick="window.location.href='check_balance.html'">
+            <h2>Balance</h2>
+            <p>Check Balance</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Tech Solutions. All rights reserved.</p>
+        <p>&copy;  2024 Simbank STK Inclusion System. All rights reserved.</p>
     </footer>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us.</title>
-    <link rel="stylesheet" href="STK1.css">
+    <title>Forgot PIN</title>
+    <link rel="stylesheet" href="forgotpin.css">
 </head>
 <body>
     <header>
@@ -23,17 +23,28 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>About Simbank</h2>
-            <p>At Simbank, we're here to make banking simple, secure and convenient.<p>
-                </p> Whether you're saving for the future, planning investments, or managing daily finances, we're here to empower every step of your journey.</p>
-        </section>
-        
-    </main>
+    <div class="container">
+        <h1>Forgot PIN</h1>
+        <form id="forgotPinForm">
+            <label for="idNumber">ID Number:</label>
+            <input type="text" id="idNumber" placeholder="Enter your ID number" required>
 
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="usedPin">Previously Used PIN:</label>
+            <input type="password" id="usedPin" placeholder="Enter any previously used PIN" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    
     <footer>
         <p>&copy; 2024 Simbank STK Inclusion System. All rights reserved.</p>
     </footer>
+
+    <script src="forgotpin.js"></script>
 </body>
 </html>

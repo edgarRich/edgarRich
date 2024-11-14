@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services</title>
-    <link rel="stylesheet" href="STK1.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
 </head>
 <body>
     <header>
-        <h1>Our Services</h1>
+        <h1>Home</h1>
         <nav>
             <ul>
-                <li><a href="STK1.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="STK1.html" target="_self">Main Page</a></li>
+                <li><a href="Home.html" target="_self">Home</a></li>
+                <li><a href="services.html" target="_self">Services</a></li>
+                <li><a href="about.html" target="_self">About Us</a></li>
+                <li><a href="contact.html" target="_self">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Web Development</h2>
-            <p>Details about web development services.</p>
-        </section>
-        <section>
-            <h2>Mobile App Development</h2>
-            <p>Details about mobile app development services.</p>
-        </section>
-        <section>
-            <h2>Cloud Solutions</h2>
-            <p>Details about cloud solutions.</p>
-        </section>
+        <div class="service">
+            <h3>Foreign Exchange Rates</h3>
+            <p>Check live foreign exchange rates <a href="https://www.x-rates.com" target="_blank">here</a>.</p>
+        </div>
+        <div class="service">
+            <h3>Crypto Exchange Rates</h3>
+            <p>Check live crypto exchange rates <a href="https://www.coingecko.com" target="_blank">here</a>.</p>
+        </div>
+
+        <!-- News Slider Section -->
+        <div class="news-slider">
+            <div class="news-slides" id="newsSlides">
+                <!-- News slides will be populated here -->
+            </div>
+        </div>
     </main>
 
+    <script src="Home.js"></script>
+
     <footer>
-        <p>&copy; 2023 Tech Solutions. All rights reserved.</p>
+        <p>&copy; 2024 Simbank STK Inclusion System. All rights reserved.</p>
     </footer>
 </body>
 </html>

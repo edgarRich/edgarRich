@@ -9,14 +9,26 @@
 <body>
     <header>
         <h1>Welcome to STK Financial Inclusion System</h1>
+        <div class="language-button">
+            Select Language
+            <div class="language-dropdown">
+                <a href="language_en.html">English</a>
+                <a href="language_sw.html">Kiswahili</a>
+            </div>
         <nav>
             <ul>
-                <li><a href="STK1.html" target="_self">Home</a></li>
+                <li><a href="STK1.html" target="_self">Main Page</a></li>
+                <li><a href="Home.html" target="_self">Home</a></li>
                 <li><a href="services.html" target="_self">Services</a></li>
                 <li><a href="about.html" target="_self">About Us</a></li>
                 <li><a href="contact.html" target="_self">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-buttons">
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='register.html'">Register</button>
+            <button onclick="window.location.href='forgotpin.html'">Forgot Pin</button>
+        </div>
     </header>
 
     <main>
@@ -46,56 +58,38 @@
 
         <section id="about">
             <h2>About Us</h2>
-            <p>STK Financial Inclusion System aims to provide accessible financial services to everyone, ensuring that no one is left behind.</p>
+            <p>At Simbank, we're here to make banking simple, secure and convenient.</p>
         </section>
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Our Team:</p>
-            <<section id="contact">
-                <h2>Contact Us</h2>
-                <ul class="contact-list">
-                  <li>
-                    <div class="contact-card">
-                      <img src="placeholder.png" alt="Profile Picture" />
-                      <h3>Peter Njihia</h3>
-                      <p>[Project Manager] [+254745763677]</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="contact-card">
-                      <img src="placeholder.png" alt="Profile Picture" />
-                      <h3>Edgar Allan Musau</h3>
-                      <p>[Project Assistant] [+254729372403]</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="contact-card">
-                      <img src="placeholder.png" alt="Profile Picture" />
-                      <h3>Matthew Amsterdam</h3>
-                      <p>[Monitoring and Evaluation Officer] [+254791569736]</p>
-                    </div>
-                  </li>
-                </ul>
-              </section>
+            <button class="large-button" onclick="window.location.href='contact.html'">
+                Contact Us
+            </button>
+            
+
             <form id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" required></textarea>
-                
-                <button type="submit">Send Message</button>
+
+                <label for="Phone Number">Phone Number</label>
+                <input type="Phone Number" id="Phone Number" required>
+
+                <label for="idNumber">ID Number:</label>
+                <input type="text" id="idNumber" required>
+
+                <label for="pin">4 Digit Pin:</label>
+                <input type="pin" id="pin" required>
+
+                <button type="submit">Register</button>
             </form>
+
             <div id="responseMessage"></div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 STK Financial Inclusion System. All rights reserved.</p>
+        <p>&copy; 2024 Simbank STK Inclusion System. All rights reserved.</p>
     </footer>
 
     <script src="STK1.js"></script>  
