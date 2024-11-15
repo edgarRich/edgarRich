@@ -1,16 +1,41 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+// LoginForm.js
+import React, { useState } from 'react';
 
-    const phone = document.getElementById('phone').value;
-    const pin = document.getElementById('pin').value;
+const LoginForm = () => {
+  const [formData, setFormData] = useState({
+    phone: '',
+    pin: ''
+  });
+  const [error, setError] = useState('');
 
-    // Simple validation
-    if (phone.length === 0 || pin.length !== 4) {
-        document.getElementById('message').innerText = 'Please enter a valid phone number and a 4-digit PIN.';
-        return;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Validate form data
+    if (!formData.phone || !formData.pin) {
+      setError('Please fill in all fields.');
+      return;
     }
 
-    // Simulate a successful login
+    // Send data to backend
+    fetch('/api/login', {
+      method: 'POST',
+      body: JSON.stringify(formData)
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Login failed');
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Handle successful login
+    })
+    .catch(error => {
+      setError('Login failed: ' + error.message);
+    });
+  };
+  
+  // Simulate a successful login
     document.getElementById('message').innerText = 'Login successful! Redirecting...';
     setTimeout(() => {
         // Redirect to another page or perform further actions

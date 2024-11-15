@@ -1,18 +1,23 @@
-// src/components/Dashboard.js
+// Dashboard.js
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 
 const Dashboard = () => {
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/transactions')
-      .then(response => {
-        setTransactions(response.data);
-      })
-      .catch(error => {
-        console.error(error);
-      });
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/transactions');
+        const data = await response.json();
+        setTransactions(data);
+      } catch (error) {
+        console.error('Error fetching transactions:', error);   
+
+      }
+    };
+
+    fetchData();   
+
   }, []);
 
   return (
