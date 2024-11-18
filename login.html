@@ -3,45 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login - Your Company Name</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <header>
-        <h1>Our Services</h1>
-        <nav>
-            <ul>
-                <nav>
-                    <ul>
-                        <li><a href="STK1.html" target="_self">Main Page</a></li>
-                        <li><a href="Home.html" target="_self">Home</a></li>
-                        <li><a href="services.html" target="_self">Services</a></li>
-                        <li><a href="about.html" target="_self">About Us</a></li>
-                        <li><a href="contact.html" target="_self">Contact</a></li>
-                    </ul>
-                </nav>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <h1>Login</h1>
-        <form id="loginForm">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" placeholder="Enter your phone number" required>
-
-            <label for="pin">4 Digit PIN:</label>
-            <input type="password" id="pin" placeholder="Enter 4-digit PIN" maxlength="4" required>
-
-            <button type="submit">Login</button>
-        </form>
-        <div id="message"></div>
+    <nav>
+        <ul>
+            <li><a href="STK1.html" target="_self">Main Page</a></li>
+            <li><a href="Home.html" target="_self">Home</a></li>
+            <li><a href="services.html" target="_self">Services</a></li>
+            <li><a href="about.html" target="_self">About Us</a></li>
+            <li><a href="contact.html" target="_self">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="box">
+        <div class="login">
+            <div class="loginBx">
+                <h2>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login
+                    <i class="fa-solid fa-heart"></i>
+                </h2>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Phone Number" inputmode="numeric" required>
+                <label for="pin">Pin</label>
+                <input type="password" id="pin" placeholder="Pin" pattern="[0-4]*" inputmode="numeric" required>
+                <input type="submit" value="Login">
+                <div class="group">
+                    <a href="#">Forgot Pin</a>
+                    <a href="#">Register</a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    
-    <footer>
-        <p>&copy; 2024 Simbank STK Inclusion System. All rights reserved.</p>
-    </footer>
-
-    <script src="login.js"></script>
 </body>
 </html>

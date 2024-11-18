@@ -1,47 +1,71 @@
 body {
+    background-color: #e0f7fa;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+}
+
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
-.container {
-    background: white;
+.login {
+    background: linear-gradient(135deg, #009688, #4db6ac);
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-h1 {
+.login:hover {
+    transform: scale(1.05);
+}
+
+.loginBx h2 {
+    color: #ffffff;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-input {
+.loginBx input[type="text"],
+.loginBx input[type="password"],
+.loginBx input[type="submit"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #5cb85c;
-    color: white;
+    margin: 10px 0;
     border: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.loginBx input[type="text"]:hover,
+.loginBx input[type="password"]:hover {
+    background-color: #b2dfdb;
+}
+
+.loginBx input[type="submit"] {
+    background-color: #00796b;
+    color: #ffffff;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #4cae4c;
+.loginBx input[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.group a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.group a:hover {
+    color: #b2dfdb;
 }
