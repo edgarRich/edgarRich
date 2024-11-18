@@ -3,45 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="Home.css">
+    <title>STK Financial Inclusion System</title>
+    <link rel="stylesheet" href="STK1.css">
 </head>
 <body>
     <header>
-        <h1>Home</h1>
+        <h1>Welcome to STK Financial Inclusion System</h1>
+        <div class="language-button">
+            Select Language
+            <div class="language-dropdown">
+                <a href="language_en.html">English</a>
+                <a href="language_sw.html">Kiswahili</a>
+            </div>
         <nav>
             <ul>
-                <li><a href="STK1.html" target="_self">Main Page</a></li>
-                <li><a href="Home.html" target="_self">Home</a></li>
+                <li><a href="STK1.html" target="_self">Home</a></li>
+                <li><a href="Home.html" target="_self">Main Page</a></li>
                 <li><a href="services.html" target="_self">Services</a></li>
                 <li><a href="about.html" target="_self">About Us</a></li>
                 <li><a href="contact.html" target="_self">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-buttons">
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='register.html'">Register</button>
+            <button onclick="window.location.href='forgotpin.html'">Forgot Pin</button>
+        </div>
     </header>
 
     <main>
-        <div class="service">
-            <h3>Foreign Exchange Rates</h3>
-            <p>Check live foreign exchange rates <a href="https://www.x-rates.com" target="_blank">here</a>.</p>
-        </div>
-        <div class="service">
-            <h3>Crypto Exchange Rates</h3>
-            <p>Check live crypto exchange rates <a href="https://www.coingecko.com" target="_blank">here</a>.</p>
-        </div>
-
-        <!-- News Slider Section -->
-        <div class="news-slider">
-            <div class="news-slides" id="newsSlides">
-                <!-- News slides will be populated here -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Getting Loans</h3>
+                <p>We provide easy access to loans for individuals and businesses.</p>
             </div>
-        </div>
-    </main>
+            <div class="service">
+                <h3>Loaning Others</h3>
+                <p>Facilitate peer-to-peer lending to help others in need.</p>
+            </div>
+            <div class="service">
+                <h3>Saving Money</h3>
+                <p>Encourage savings with attractive interest rates.</p>
+            </div>
+            <div class="service">
+                <h3>Foreign Exchange Rates</h3>
+                <p>Check live foreign exchange rates <a href="https://www.x-rates.com" target="_blank">here</a>.</p>
+            </div>
+            <div class="service">
+                <h3>Crypto Exchange Rates</h3>
+                <p>Check live crypto exchange rates <a href="https://www.coingecko.com" target="_blank">here</a>.</p>
+            </div>
+        </section>
 
-    <script src="Home.js"></script>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Simbank, we're here to make banking simple, secure and convenient.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <button class="large-button" onclick="window.location.href='contact.html'">
+                Contact Us
+            </button>
+            
+
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="Phone Number">Phone Number</label>
+                <input type="Phone Number" id="Phone Number" required>
+
+                <label for="idNumber">ID Number:</label>
+                <input type="text" id="idNumber" required>
+
+                <label for="pin">4 Digit Pin:</label>
+                <input type="pin" id="pin" required>
+
+                <button type="submit">Register</button>
+            </form>
+
+            <div id="responseMessage"></div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Simbank STK Inclusion System. All rights reserved.</p>
     </footer>
+
+    <script src="STK1.js"></script> 
+    <script src="app.js"></script> <!-- Link to your JavaScript file --> 
 </body>
 </html>
