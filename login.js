@@ -1,44 +1,25 @@
-// LoginForm.js
-import React, { useState } from 'react';
+// login.js
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission
 
-const LoginForm = () => {
-  const [formData, setFormData] = useState({
-    phone: '',
-    pin: ''
-  });
-  const [error, setError] = useState('');
+    const phone = document.getElementById('phone').value;
+    const pin = document.getElementById('pin').value;
+    const messageDiv = document.getElementById('message');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Validate form data
-    if (!formData.phone || !formData.pin) {
-      setError('Please fill in all fields.');
-      return;
+    // Check if the user is registered
+    const isRegistered = localStorage.getItem('registered');
+
+    if (isRegistered) {
+        // Simulate successful login
+        messageDiv.textContent = "Login successful! Redirecting to Home...";
+        messageDiv.style.color = "green";
+
+        // Redirect to Home page after a short delay
+        setTimeout(() => {
+            window.location.href = 'Home.html'; // Redirect to Home page
+        }, 2000);
+    } else {
+        messageDiv.textContent = "You must register before logging in.";
+        messageDiv.style.color = "red";
     }
-
-    // Send data to backend
-    fetch('/api/login', {
-      method: 'POST',
-      body: JSON.stringify(formData)
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Login failed');
-      }
-      return response.json();
-    })
-    .then(data => {
-      // Handle successful login
-    })
-    .catch(error => {
-      setError('Login failed: ' + error.message);
-    });
-  };
-  
-  // Simulate a successful login
-    document.getElementById('message').innerText = 'Login successful! Redirecting...';
-    setTimeout(() => {
-        // Redirect to another page or perform further actions
-        window.location.href = 'dashboard.html'; // Change to your desired page
-    }, 2000);
 });

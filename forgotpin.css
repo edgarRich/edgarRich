@@ -1,22 +1,49 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007bff;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero {
+    background: #e9ecef;
+    padding: 20px;
+    text-align: center;
 }
 
 .container {
-    background: white;
+    max-width: 600px;
+    margin: 20px auto;
     padding: 20px;
+    background: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    text-align: center;
+h1, h2 {
+    color: #333;
 }
 
 label {
@@ -24,24 +51,35 @@ label {
     margin: 10px 0 5px;
 }
 
-input {
+input[type="text"],
+input[type="date"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #5cb85c;
-    color: white;
+    background: #007bff;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #007bff;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

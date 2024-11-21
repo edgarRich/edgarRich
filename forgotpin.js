@@ -6,11 +6,19 @@ document.getElementById('forgotPinForm').addEventListener('submit', function(eve
     const usedPin = document.getElementById('usedPin').value;
 
     // Simple validation
-    if (idNumber.length === 0 || dob.length === 0 || usedPin.length === 0) {
-        document.getElementById('message').innerText = 'Please fill in all fields.';
+    if (idNumber.length === 0) {
+        document.getElementById('message').innerText = 'ID Number is required.';
         return;
     }
-
+    if (dob.length === 0) {
+        document.getElementById('message').innerText = 'Date of Birth is required.';
+        return;
+    }
+    if (usedPin.length === 0) {
+        document.getElementById('message').innerText = 'Previously Used PIN is required.';
+        return;
+    }
+    
     // Simulate a successful PIN recovery
     document.getElementById('message').innerText = 'PIN recovery successful! You will receive instructions via email.';
     setTimeout(() => {

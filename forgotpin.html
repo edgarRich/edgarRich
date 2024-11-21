@@ -8,39 +8,42 @@
 </head>
 <body>
     <header>
-        <h1>Our Services</h1>
+        <img src="Simbank_STK_logo.jpg" alt="STK Logo" class="logo">
+        <h1>Forgot Pin?</h1>
         <nav>
             <ul>
-                <nav>
-                    <ul>
-                        <li><a href="STK1.html" target="_self">Main Page</a></li>
-                        <li><a href="Home.html" target="_self">Home</a></li>
-                        <li><a href="services.html" target="_self">Services</a></li>
-                        <li><a href="about.html" target="_self">About Us</a></li>
-                        <li><a href="contact.html" target="_self">Contact</a></li>
-                    </ul>
-                </nav>
+                <li><a href="STK1.html" target="_self">Main Page</a></li>
+                <li><a href="Home.html" target="_self">Home</a></li>
+                <li><a href="services.html" target="_self">Services</a></li>
+                <li><a href="about.html" target="_self">About Us</a></li>
+                <li><a href="contact.html" target="_self">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
+
+    <div class="hero">
+        <h2>Recover Your PIN Easily</h2>
+        <p>Follow the steps below to regain access to your account.</p>
+    </div>
+    
     <div class="container">
         <h1>Forgot PIN</h1>
         <form id="forgotPinForm">
             <label for="idNumber">ID Number:</label>
-            <input type="text" id="idNumber" placeholder="Enter your ID number" required>
+            <input type="text" id="idNumber" placeholder="Enter your ID number" required aria-label="ID Number">
 
             <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" required>
+            <input type="date" id="dob" required aria-label="Date of Birth">
 
             <label for="usedPin">Previously Used PIN:</label>
-            <input type="password" id="usedPin" placeholder="Enter any previously used PIN" required>
+            <input type="password" id="usedPin" placeholder="Enter any previously used PIN" required aria-label="Previously Used PIN">
 
-            <button type="submit">Submit</button>
+            <button type="button" onclick="window.location.href='login.html'">Submit</button>
         </form>
         <div id="message"></div>
     </div>
 
-    
     <footer>
         <p>&copy; 2024 Simbank STK Inclusion System. All rights reserved.</p>
     </footer>

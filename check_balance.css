@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
     margin: 0;
     padding: 20px;
 }
@@ -8,14 +8,15 @@ body {
 .container {
     max-width: 400px;
     margin: auto;
-    background: white;
+    background: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
+    color: #007bff; /* Company primary color */
 }
 
 label {
@@ -34,7 +35,7 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #28a745; /* Green */
     color: white;
     border: none;
     border-radius: 5px;
@@ -42,7 +43,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Darker green on hover */
 }
 
 #result {

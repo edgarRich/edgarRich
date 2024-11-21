@@ -1,6 +1,6 @@
 body {
-    background-color: #e0f7fa;
-    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .box {
@@ -41,17 +41,16 @@ body {
 
 .loginBx input[type="text"]:hover,
 .loginBx input[type="password"]:hover {
-    background-color: #b2dfdb;
+    background-color: #b2dfdb; /* Light green */
 }
 
 .loginBx input[type="submit"] {
-    background-color: #00796b;
+    background-color: #00796b; /* Company primary color */
     color: #ffffff;
-    cursor: pointer;
 }
 
 .loginBx input[type="submit"]:hover {
-    background-color: #004d40;
+    background-color: #004d40; /* Darker color on hover */
 }
 
 .group {
@@ -67,5 +66,5 @@ body {
 }
 
 .group a:hover {
-    color: #b2dfdb;
+    color: #b2dfdb; /* Light green on hover */
 }

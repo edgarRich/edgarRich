@@ -1,18 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light gray background */
 }
 
 header {
-    background: rgba(0, 123, 255, 0.8);
+    background: #007bff; /* Company primary color */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
-
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
 
 nav ul {
     list-style: none;
@@ -27,11 +30,23 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
 }
 
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px; /* Centering main content */
+    margin: auto;
+}
 
 section {
-    background-color: white;
+    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
@@ -41,8 +56,8 @@ section {
 }
 
 section:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
 button {
@@ -57,4 +72,14 @@ button {
 
 button:hover {
     background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #007bff; /* Company primary color */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
