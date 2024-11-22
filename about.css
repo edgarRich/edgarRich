@@ -1,13 +1,13 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #e0f7fa; /* Light cyan background */
     color: #333;
     margin: 0;
     padding: 20px;
 }
 
 header {
-    background-color: #007bff; /* Company primary color */
+    background-color: #4db6ac; /* Calming teal color */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -47,7 +47,7 @@ main {
 }
 
 section {
-    background-color: #fff;
+    background-color: #ffffff; /* White background for sections */
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -55,7 +55,7 @@ section {
 }
 
 h2 {
-    color: #007bff; /* Company primary color */
+    color: #00796b; /* Darker teal color */
     margin-top: 0;
 }
 
@@ -64,7 +64,7 @@ p {
 }
 
 footer {
-    background-color: #007bff; /* Company primary color */
+    background-color: #4db6ac; /* Calming teal color */
     color: #fff;
     padding: 20px;
     text-align: center;

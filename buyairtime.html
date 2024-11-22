@@ -39,5 +39,19 @@
     <footer>
         <p>&copy; 2024 Simbank STK Inclusion System. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById('airtimeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            const amount = document.getElementById('amount').value;
+            const pin = document.getElementById('pin').value;
+
+            if (pin.length === 4) {
+                alert(`Airtime of ${amount} has been purchased for ${phoneNumber}.`);
+            } else {
+                alert('Please enter a valid 4-digit PIN.');
+            }
+        });
+    </script>
 </body>
 </html>

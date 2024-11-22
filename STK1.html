@@ -1,3 +1,5 @@
+# STK Financial Inclusion System
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +18,7 @@
                 <a href="language_en.html">English</a>
                 <a href="language_sw.html">Kiswahili</a>
             </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="STK1.html" target="_self">Main Page</a></li>
@@ -38,49 +41,59 @@
             <div class="service">
                 <h3>Getting Loans</h3>
                 <p>We provide easy access to loans for individuals and businesses.</p>
+                <img src="loan_image.jpg" alt="Getting Loans" class="service-image">
             </div>
             <div class="service">
                 <h3>Loaning Others</h3>
                 <p>Facilitate peer-to-peer lending to help others in need.</p>
+                <img src="loaning_others_image.jpg" alt="Loaning Others" class="service-image">
             </div>
             <div class="service">
                 <h3>Saving Money</h3>
                 <p>Encourage savings with attractive interest rates.</p>
+                <img src="saving_money_image.jpg" alt="Saving Money" class="service-image">
             </div>
             <div class="service">
                 <h3>Foreign Exchange Rates</h3>
                 <p>Check live foreign exchange rates <a href="https://www.x-rates.com" target="_blank">here</a>.</p>
+                <img src="forex_image.jpg" alt="Foreign Exchange Rates" class="service-image">
             </div>
             <div class="service">
                 <h3>Crypto Exchange Rates</h3>
                 <p>Check live crypto exchange rates <a href="https://www.coingecko.com" target="_blank">here</a>.</p>
+                <img src="crypto_image.jpg" alt="Crypto Exchange Rates" class="service-image">
             </div>
         </section>
 
         <section id="about">
             <h2>About Us</h2>
             <p>At Simbank, we're here to make banking simple, secure and convenient.</p>
+            <img src="about_us_image.jpg" alt="About Us" class="about-image">
         </section>
+
+        # Stylish Contact Button
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <button class="large-button" onclick="window.location.href='contact.html'">
+            <img src="contact_us_image.jpg" alt="Contact Us" />
+            <button class="large-button" onclick="window.location.href='contact.html'" style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border: none; border-radius: 12px; transition: background-color 0.3s;">
                 Contact Us
             </button>
+        </section>
+        
             
-
             <form id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" required>
 
-                <label for="Phone Number">Phone Number</label>
-                <input type="Phone Number" id="Phone Number" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
 
                 <label for="idNumber">ID Number:</label>
                 <input type="text" id="idNumber" required>
 
                 <label for="pin">4 Digit Pin:</label>
-                <input type="pin" id="pin" required>
+                <input type="password" id="pin" required>
 
                 <button type="submit">Register</button>
             </form>
@@ -94,6 +107,6 @@
     </footer>
 
     <script src="STK1.js"></script> 
-    <script src="app.js"></script> <!-- Link to your JavaScript file --> 
+    <script src="app.js"></script> 
 </body>
 </html>

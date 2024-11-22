@@ -1,70 +1,100 @@
 body {
-    background-color: #e0f7fa; /* Light cyan background */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4db6ac; /* Calming teal color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 100px);
 }
 
 .login {
-    background: linear-gradient(135deg, #009688, #4db6ac);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.login:hover {
-    transform: scale(1.05);
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .loginBx h2 {
-    color: #ffffff;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.loginBx input[type="text"],
-.loginBx input[type="password"],
-.loginBx input[type="submit"] {
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
     border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.loginBx input[type="text"]:hover,
-.loginBx input[type="password"]:hover {
-    background-color: #b2dfdb; /* Light green */
-}
-
-.loginBx input[type="submit"] {
-    background-color: #00796b; /* Company primary color */
-    color: #ffffff;
-}
-
-.loginBx input[type="submit"]:hover {
-    background-color: #004d40; /* Darker color on hover */
+input[type="submit"]:hover {
+    background-color: #00509e;
 }
 
 .group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 15px;
 }
 
-.group a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.group p {
+    margin: 5px 0;
 }
 
-.group a:hover {
-    color: #b2dfdb; /* Light green on hover */
+footer {
+    background-color: #4db6ac; /* Calming teal color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
