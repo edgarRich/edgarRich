@@ -11,11 +11,11 @@ export const goToHomeFixtures = [
 
 export const goBackFixtures = [
   { input: '', output: '' },
-  { input: '420*1*1', output: '544*1*1' },
-  { input: '420*1*1*00', output: '544*1' },
-  { input: '420*1*1*00*2', output: '544*1*2' },
-  { input: '420*1*1*00*2*1*00', output: '544*1*2' },
-  { input: '420*1*1*00*2*1*00*3', output: '544*1*2*3' },
+  { input: '420*1*1', output: '420*1*1' },
+  { input: '420*1*1*00', output: '420*1' },
+  { input: '420*1*1*00*2', output: '420*1*2' },
+  { input: '420*1*1*00*2*1*00', output: '420*1*2' },
+  { input: '420*1*1*00*2*1*00*3', output: '420*1*2*3' },
   { input: '00', output: '' },
   { input: '00*1', output: '1' },
 ];
