@@ -22,4 +22,11 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
         messageDiv.textContent = "You must register before logging in.";
         messageDiv.style.color = "red";
     }
+    function handleSubmit() {
+    // Perform any necessary validation or submission logic here
+
+    // Redirect to home page after submission
+    window.location.href = "home.html";
+    return false; // Prevent the default form submission
+}
 });
