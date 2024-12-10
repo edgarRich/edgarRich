@@ -1,11 +1,11 @@
 /* General body styles */
 body {
-    font-family: Poppins;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: linear-gradient(to right, #4CAF50, #2196F3); /* Greenish and bluish gradient */
-    color: #fff;
+    background: #f5f5f7; /* Greenish and bluish gradient */
+    color: #333;
 }
 
 /* Header styles */
