@@ -1,0 +1,112 @@
+# STK Financial Inclusion System
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STK Financial Inclusion System</title>
+    <link rel="stylesheet" href="STK1.css">
+</head>
+<body>
+    <header>
+        <img src="Simbank_STK_logo.jpg" alt="STK Logo" class="logo">
+        <h1>Welcome to STK Financial Inclusion System</h1>
+        <div class="language-button">
+            Select Language
+            <div class="language-dropdown">
+                <a href="language_en.html">English</a>
+                <a href="language_sw.html">Kiswahili</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="STK1.html" target="_self">Main Page</a></li>
+                <li><a href="Home.html" target="_self">Home</a></li>
+                <li><a href="services.html" target="_self">Services</a></li>
+                <li><a href="about.html" target="_self">About Us</a></li>
+                <li><a href="contact.html" target="_self">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='register.html'">Register</button>
+            <button onclick="window.location.href='forgotpin.html'">Forgot Pin</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Getting Loans</h3>
+                <p>We provide easy access to loans for individuals and businesses.</p>
+                <img src="loan_image.jpg" alt="Getting Loans" class="service-image">
+            </div>
+            <div class="service">
+                <h3>Loaning Others</h3>
+                <p>Facilitate peer-to-peer lending to help others in need.</p>
+                <img src="loaning_others_image.jpg" alt="Loaning Others" class="service-image">
+            </div>
+            <div class="service">
+                <h3>Saving Money</h3>
+                <p>Encourage savings with attractive interest rates.</p>
+                <img src="saving_money_image2.png" alt="Saving Money" class="service-image">
+            </div>
+            <div class="service">
+                <h3>Foreign Exchange Rates</h3>
+                <p>Check live foreign exchange rates <a href="https://www.x-rates.com" target="_blank">here</a>.</p>
+                <img src="forex_image.jpg" alt="Foreign Exchange Rates" class="service-image">
+            </div>
+            <div class="service">
+                <h3>Crypto Exchange Rates</h3>
+                <p>Check live crypto exchange rates <a href="https://www.coingecko.com" target="_blank">here</a>.</p>
+                <img src="crypto_image.jpg" alt="Crypto Exchange Rates" class="service-image">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Simbank, we're here to make banking simple, secure and convenient.</p>
+            <img src="about_us_image.jpg" alt="About Us" class="about-image">
+        </section>
+
+        # Stylish Contact Button
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <img src="contact_us_image.jpg" alt="Contact Us" />
+            <button class="large-button" onclick="window.location.href='contact.html'" style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border: none; border-radius: 12px; transition: background-color 0.3s;">
+                Contact Us
+            </button>
+        </section>
+        
+            
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="idNumber">ID Number:</label>
+                <input type="text" id="idNumber" required>
+
+                <label for="pin">4 Digit Pin:</label>
+                <input type="password" id="pin" required>
+
+                <button type="submit">Register</button>
+            </form>
+
+            <div id="responseMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simbank STK Inclusion System. All rights reserved.</p>
+    </footer>
+
+    <script src="STK1.js"></script> 
+    <script src="app.js"></script> 
+</body>
+</html>
