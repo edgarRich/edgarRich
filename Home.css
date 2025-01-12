@@ -10,7 +10,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #EDE8F5; /* Calming teal color */
+    background-color: #4db6ac; /* Calming teal color */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -77,3 +77,28 @@ main {
 }
 
 /* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4db6ac;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    main {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .logo {
+      width: 100px;
+    }
+  }
