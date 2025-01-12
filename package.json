@@ -1,0 +1,21 @@
+{
+  "name": "musauedgar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "STK1.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "live-server": "^1.2.0",
+    "postcss-cli": "^11.0.0",
+    "terser": "^5.37.0"
+  }
+}

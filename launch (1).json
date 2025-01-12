@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chromium against localhost",
+            "url": "http://localhost:8080", 
+            "webRoot": "${workspaceFolder}",
+            "runtimeExecutable": "/usr/bin/chromium", 
+            "runtimeArgs": [
+                "--no-sandbox", 
+                "--disable-gpu" 
+            ],
+            "port": 9222,
+            "sourceMaps": true, 
+            "trace": true 
+        }
+    ]
+}
