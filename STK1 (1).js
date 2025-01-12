@@ -1,5 +1,3 @@
-// STK1.js
-
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     const responseMessage = document.getElementById('responseMessage');
@@ -14,7 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Simulate form submission
         setTimeout(() => {
-            responseMessage.innerHTML = `<p>Thank you, ${name}. Your registration is successful!</p>`;
+            if (responseMessage) {
+                responseMessage.innerHTML = `<p>Thank you, ${name}. Your registration is successful!</p>`;
+            } else {
+                console.error('Response message element not found.');
+            }
             contactForm.reset();
         }, 1000);
     });

@@ -7,7 +7,7 @@ async function fetchNews() {
         const response = await fetch(url);
         const data = await response.json();
 
-        if (data.data) {
+        if (data.data && data.data.length > 0) {
             const newsSlides = document.getElementById('newsSlides');
             newsSlides.innerHTML = ''; // Clear existing slides
 
@@ -33,6 +33,10 @@ async function fetchNews() {
                 slideIndex = (slideIndex + 1) % slides.length; // Move to the next slide
                 slides[slideIndex].style.display = 'block'; // Show next slide
             }, 5000);
+        } else {
+            // Display a message if no articles are available
+            const newsSlides = document.getElementById('newsSlides');
+            newsSlides.innerHTML = '<p>No news articles available at this time.</p>';
         }
     } catch (error) {
         console.error('Error fetching news:', error);

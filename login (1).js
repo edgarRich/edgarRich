@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 
         // Redirect to Home page after a short delay
         setTimeout(() => {
-            window.location.href = 'Home.html'; // Redirect to Home page
+            window.location.href = 'Home.html'; // Corrected to match the actual file name
         }, 2000);
     } else {
         messageDiv.textContent = "You must register before logging in.";

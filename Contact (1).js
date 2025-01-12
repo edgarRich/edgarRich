@@ -6,15 +6,21 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [responseMessage, setResponseMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add logic to send the form data to your backend
-    setResponseMessage("Thank you for your message!");
-    // Reset form fields
-    setName('');
-    setEmail('');
-    setMessage('');
+    setIsLoading(true);
+    
+    // Simulate a network request
+    setTimeout(() => {
+      setResponseMessage("Thank you for your message!");
+      setIsLoading(false);
+      // Reset form fields
+      setName('');
+      setEmail('');
+      setMessage('');
+    }, 1000);
   };
 
   return (
@@ -36,9 +42,9 @@ const Contact = () => {
         <label htmlFor="message">Message:</label>
         <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
         
-        <button type="submit">Send Message</button>
+        <button type="submit" disabled={isLoading}>{isLoading ? 'Sending...' : 'Send Message'}</button>
       </form>
-      {responseMessage && <div id="responseMessage">{responseMessage}</div>}
+      {responseMessage && <div id="responseMessage" aria-live="polite">{responseMessage}</div>}
     </section>
   );
 };

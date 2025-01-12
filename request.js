@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
-    
-    form.addEventListener('submit', function(event) {
+
+    form.addEventListener('submit', (event) => {
         event.preventDefault();
-        
+
         const phoneNumber = document.getElementById('phoneNumber').value;
         const amount = document.getElementById('amount').value;
         const reason = document.getElementById('reason').value;
@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    function validateInput(phoneNumber, amount) {
+    const validateInput = (phoneNumber, amount) => {
         const phonePattern = /^[0-9]{10}$/; // Example pattern for a 10-digit phone number
         if (!phonePattern.test(phoneNumber)) {
             alert('Please enter a valid 10-digit phone number.');
             return false;
         }
-        if (amount <= 0) {
+        if (isNaN(amount) || amount <= 0) {
             alert('Please enter a valid amount.');
             return false;
         }

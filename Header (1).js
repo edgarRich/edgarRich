@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <h1>Welcome to STK Financial Inclusion System</h1>
-      <nav>
+      <nav aria-label="Main Navigation">
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/services">Services</a></li>

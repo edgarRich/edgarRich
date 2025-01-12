@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname))); // This serves all static files i
 
 // Define a route for the root URL
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'STK1 (1).html')); // Serve the main HTML file
+    res.sendFile(path.join(__dirname, 'STK1.html')); // Serve the main HTML file
 });
 
 // Start the server

@@ -2,29 +2,47 @@
 import React from 'react';
 
 const Services = () => {
+  const sectionId = "services";
+  const services = [
+    {
+      title: "Getting Loans",
+      description: "We provide easy access to loans for individuals and businesses."
+    },
+    {
+      title: "Loaning Others",
+      description: "Facilitate peer-to-peer lending to help others in need."
+    },
+    {
+      title: "Saving Money",
+      description: "Encourage savings with attractive interest rates."
+    },
+    {
+      title: "Foreign Exchange Rates",
+      description: (
+        <>
+          Check live foreign exchange rates <a href="https://www.x-rates.com" target="_blank" rel="noopener noreferrer">here</a>.
+        </>
+      )
+    },
+    {
+      title: "Crypto Exchange Rates",
+      description: (
+        <>
+          Check live crypto exchange rates <a href="https://www.coingecko.com" target="_blank" rel="noopener noreferrer">here</a>.
+        </>
+      )
+    }
+  ];
+
   return (
-    <section id="services">
+    <section id={sectionId}>
       <h2>Our Services</h2>
-      <div className="service">
-        <h3>Getting Loans</h3>
-        <p>We provide easy access to loans for individuals and businesses.</p>
-      </div>
-      <div className="service">
-        <h3>Loaning Others</h3>
-        <p>Facilitate peer-to-peer lending to help others in need.</p>
-      </div>
-      <div className="service">
-        <h3>Saving Money</h3>
-        <p>Encourage savings with attractive interest rates.</p>
-      </div>
-      <div className="service">
-        <h3>Foreign Exchange Rates</h3>
-        <p>Check live foreign exchange rates <a href="https://www.x-rates.com" target="_blank" rel="noopener noreferrer">here</a>.</p>
-      </div>
-      <div className="service">
-        <h3>Crypto Exchange Rates</h3>
-        <p>Check live crypto exchange rates <a href="https://www.coingecko.com" target="_blank" rel="noopener noreferrer">here</a>.</p>
-      </div>
+      {services.map((service, index) => (
+        <div className="service" key={index}>
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+        </div>
+      ))}
     </section>
   );
 };

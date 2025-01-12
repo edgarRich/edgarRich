@@ -5,6 +5,13 @@ body {
     padding: 0;
 }
 
+header {
+    background-color: #4db6ac; /* Calming teal color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -88,3 +95,21 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    main {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .logo {
+      width: 100px;
+    }
+  }
+
+  
