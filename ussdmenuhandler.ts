@@ -1,4 +1,4 @@
-// index.ts
+// ussdMenuHandler.ts
 export const goBack = (str: string, keyword: string = '00'): string => {
     if (!str) return ''; // Handle empty input
   
