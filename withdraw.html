@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6614432074968379"
-     crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-6614432074968379">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Withdraw Money</title>
     <link rel="icon" type="image/ico" sizes="32x32" href="Simbank_STK_logo.ico">
-<link rel="icon" type="image/ico" sizes="16x16" href="Simbank_STK_logo.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="Simbank_STK_logo.ico">
-<link rel="manifest" href="Simbank_STK_logo.ico">
+    <link rel="icon" type="image/ico" sizes="16x16" href="Simbank_STK_logo.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="Simbank_STK_logo.ico">
+    <link rel="manifest" href="Simbank_STK_logo.ico">
     <link rel="stylesheet" href="withdraw.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6614432074968379" crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-6614432074968379">
 </head>
 <body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6614432074968379"
-     crossorigin="anonymous"></script>
-<!-- yeat -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6614432074968379"
-     data-ad-slot="2082528382"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6614432074968379"
+         data-ad-slot="2082528382"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
     <header>
         <img src="Simbank_STK_logo.jpg" alt="STK Logo" class="logo">
         <nav>
@@ -37,26 +34,26 @@
                 <li><a href="contact.html" target="_self">Contact</a></li>
             </ul>
         </nav>
-        </header>
+    </header>
 
     <main>
         <h2>Withdraw Money</h2>
-        <form>
+        <form action="process_withdrawal.php" method="POST">
             <label for="agentNumber">Agent Number:</label>
-            <input type="text" id="agentNumber" name="agentNumber" required>
+            <input type="text" id="agentNumber" name="agentNumber" required aria-label="Agent Number">
 
             <label for="amount">Amount:</label>
-            <input type="number" id="amount" name="amount" required>
+            <input type="number" id="amount" name="amount" required aria-label="Withdrawal Amount">
 
             <label for="pin">4-Digit PIN:</label>
-            <input type="password" id="pin" name="pin" maxlength="4" required>
+            <input type="password" id="pin" name="pin" maxlength="4" required aria-label="4-Digit PIN">
 
             <button type="submit">Withdraw</button>
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2024 Simbank STK Inclusion System. All rights reserved.</p>
+        <p>&copy; 2025 Simbank STK Inclusion System. All rights reserved.</p>
     </footer>
     <script src="withdraw.js"></script>
 </body>
